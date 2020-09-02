@@ -37,8 +37,10 @@ class Details extends React.Component {
     );
   }
 }
-export default function DetailsWithErrorBoundary(props) {
-  <ErrorBoundary>
-    <Details {...props} />
-  </ErrorBoundary>;
+export default function DetailsErrorBoundary(props) {
+  return (
+    <ErrorBoundary>
+      <Details {...props} />
+    </ErrorBoundary>
+  );
 }
